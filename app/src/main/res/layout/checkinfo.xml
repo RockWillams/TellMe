@@ -1,0 +1,646 @@
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.taichina.xlt.fragment.BlankFragment"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line"/>
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/basic_info"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/stripBackGround"
+        android:clickable="true">
+        <ImageView
+        android:id="@+id/s0"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/weixin_pressed"
+            android:layout_gravity="center_vertical"
+           android:scaleType="centerInside"
+            />
+        <TextView
+        android:id="@+id/s1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="23sp"
+            android:layout_gravity="center_vertical"
+        android:text="@string/CheckInfo" />
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="right"
+            android:layout_gravity="center_vertical">
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+
+        android:background="@mipmap/wdzy_back_btn_black1"
+        android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/stripBackGround">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="车间："
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table1"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="5车间"
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table1"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="@color/line"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="被检查人："
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table2"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="王司机"
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table2"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/stripBackGround">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="岗位："
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table2"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="司机"
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table2"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="@color/line"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="路线："
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table1"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="京沪线"
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table1"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/stripBackGround">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="起始站："
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table1"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="北京"
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table1"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="@color/line"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="终点站："
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table2"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="上海"
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table2"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/stripBackGround">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="日期："
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table2"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="2015年06月06日"
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table2"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="@color/line"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="车次："
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table1"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="G123"
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table1"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/stripBackGround">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="车型："
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table1"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="SK3115"
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table1"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="@color/line"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="检查人："
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table2"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="Willams"
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:background="@color/table2"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:background="@color/stripBackGround"
+        >
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/keyNoticeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@color/stripBackGround"
+                android:clickable="true">
+                <ImageView
+                    android:id="@+id/noticeImg"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/weixin_pressed"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="23sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="重点提示：" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+
+                        android:background="@mipmap/wdzy_back_btn_black1"
+                        android:layout_marginRight="20dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:background="@color/line"/>
+
+            <ListView
+                android:id="@+id/keyNotice"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp">
+
+            </ListView>
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/keyCheckItemLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@color/stripBackGround"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/weixin_pressed"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="23sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="关键检查项：" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+
+                        android:background="@mipmap/wdzy_back_btn_black1"
+                        android:layout_marginRight="20dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:background="@color/line"/>
+
+            <ListView
+                android:id="@+id/keyCheckItem"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp">
+
+            </ListView>
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/recheckItemLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@color/stripBackGround"
+                android:clickable="true">
+                <ImageView
+
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/weixin_pressed"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="23sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="整改复验项：" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+
+                        android:background="@mipmap/wdzy_back_btn_black1"
+                        android:layout_marginRight="20dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:background="@color/line"/>
+
+            <ListView
+                android:id="@+id/recheckItem"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp">
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:background="@color/stripBackGround">
+        <LinearLayout
+            android:id="@+id/detailCheckItem"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+
+
+            android:clickable="true">
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/weixin_pressed"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerInside"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="23sp"
+                android:layout_gravity="center_vertical"
+                android:text="详细检查项：" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="right"
+                android:layout_gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+
+                    android:background="@mipmap/wdzy_back_btn_black1"
+                    android:layout_marginRight="20dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+
+        <ListView
+            android:id="@+id/detailCheck"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp">
+
+
+        </ListView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

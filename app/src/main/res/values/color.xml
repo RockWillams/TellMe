@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="background">#ffeaeaea</color><!--大背景色-->
+    <color name="actionbarBackGround">#ff22292c</color><!--标题栏背景色 -->
+    <color name="stripBackGround">#fffdfdfe</color><!--横条背景色 -->
+    <color name="line">#ffd9d9d9</color><!--横条背景色 -->
+    <color name="bottomBackGround">#fffafbfb</color><!--横条背景色 -->
+    <color name="msgbackground">#ffb1e766</color><!--横条背景色 -->
+    <color name="msgcover">#ff5e9514</color><!--横条背景色 -->
+    <color name="dialogbackgound">#ffd3d3d3</color><!--横条背景色 -->
+    <color name="fontcolorBlack">#ff353535</color><!--横条背景色 -->
+    <color name="fontcolorWhite">#ffd4d4d4</color><!--横条背景色 -->
+    <color name="gray">#808080</color><!--灰色 -->
+    <color name="table1">#ffe5fff6</color>
+    <color name="table2">#fff2fff8</color>
+</resources>
