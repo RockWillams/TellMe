@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.taichina.xlt.Utils.AddItemActivity">
+    <item android:id="@+id/action_settings" android:title="缓存已选"
+        android:icon="@mipmap/tshirt"
+        android:orderInCategory="100" app:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/action_settings1" android:title="提交已选"
+        android:orderInCategory="100" app:showAsAction="ifRoom|withText"
+        android:icon="@mipmap/tshirt" />
+</menu>

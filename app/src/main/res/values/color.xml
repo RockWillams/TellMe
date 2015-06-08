@@ -13,4 +13,6 @@
     <color name="gray">#808080</color><!--灰色 -->
     <color name="table1">#ffe5fff6</color>
     <color name="table2">#fff2fff8</color>
+    <color name="tabstrip">#fffdbdff</color>
+    <color name="red">#ffff1524</color>
 </resources>

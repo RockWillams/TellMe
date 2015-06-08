@@ -4,6 +4,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.media.Image;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -66,14 +67,17 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         initview();
         fragmentManager = getFragmentManager();
 
+
         // 第一次启动时选中第0个tab
         setTabSelection(0);
     }
 
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.check_menu, menu);
 
         return true;
     }

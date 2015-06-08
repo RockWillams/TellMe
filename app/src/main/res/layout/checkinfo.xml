@@ -1,15 +1,18 @@
 
-
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    >
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+   android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context="com.taichina.xlt.fragment.BlankFragment"
     android:orientation="vertical"
     android:background="@color/background">
     <View
         android:layout_width="fill_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:background="@color/line"/>
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -22,6 +25,7 @@
         <ImageView
         android:id="@+id/s0"
         android:layout_width="50dp"
+            android:paddingLeft="10dp"
         android:layout_height="wrap_content"
         android:src="@mipmap/weixin_pressed"
             android:layout_gravity="center_vertical"
@@ -56,13 +60,13 @@
     <View
         android:layout_width="fill_parent"
         android:layout_height="1dp"
+
         android:background="@color/line"/>
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+
         android:orientation="vertical">
     <LinearLayout
         android:layout_width="fill_parent"
@@ -355,6 +359,8 @@
     <View
         android:layout_width="fill_parent"
         android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:background="@color/line"/>
     <LinearLayout
         android:layout_width="fill_parent"
@@ -630,7 +636,7 @@
         <ListView
             android:id="@+id/detailCheck"
             android:layout_width="fill_parent"
-            android:layout_height="60dp">
+            android:layout_height="600dp">
 
 
         </ListView>
@@ -644,3 +650,4 @@
 
 </LinearLayout>
 
+</ScrollView>

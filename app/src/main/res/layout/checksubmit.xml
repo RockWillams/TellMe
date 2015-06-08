@@ -1,10 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-    <TextView
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/line"/>
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/basic_info"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/stripBackGround"
+        android:clickable="true">
+        <ImageView
+            android:id="@+id/s0"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/weixin_pressed"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            />
+        <TextView
+            android:id="@+id/s1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="23sp"
+            android:layout_gravity="center_vertical"
+            android:text="问题记录" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+
+                android:background="@mipmap/wdzy_back_btn_black1"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+
+    <ListView
+        android:id="@+id/list1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="ss1"
-        android:textSize="222sp"/>
+        />
+
+
+
 
 </LinearLayout>
