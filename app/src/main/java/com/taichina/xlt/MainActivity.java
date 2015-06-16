@@ -2,13 +2,9 @@ package com.taichina.xlt;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.DialogInterface;
-import android.media.Image;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,7 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.taichina.xlt.fragment.BlankFragment;
-import com.taichina.xlt.fragment.CheckInfo;
+import com.taichina.xlt.fragment.CheckInfoFragment;
+import com.taichina.xlt.fragment.SyncFragment;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
@@ -25,7 +22,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
      * 用于展示消息的Fragment
      */
     private BlankFragment messageFragment;
-    private CheckInfo checkInfo;
+    private CheckInfoFragment checkInfo;
+    private SyncFragment syncFragment;
 
     /**
      * 用于展示联系人的Fragment
@@ -147,7 +145,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     }
 
 
-    public void setTabSelection(int index) {
+    public void  setTabSelection(int index) {
         cleanTabSelection();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         hideFragments(transaction);
@@ -157,19 +155,19 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 Log.e("test", "texst");
                 msgbtn0.setImageResource(R.mipmap.weixin_pressed);
                 msgtext0.setTextColor(getResources().getColor(R.color.msgcover));
-                if(messageFragment == null){
-                     messageFragment = new BlankFragment();
-                    transaction.add(R.id.content,messageFragment);
+                if(syncFragment == null){
+                    syncFragment = new SyncFragment();
+                    transaction.add(R.id.content,syncFragment);
                 }
-                else transaction.show(messageFragment);
+                else transaction.show(syncFragment);
 
                 break;
             case 1:
                 msgbtn1.setImageResource(R.mipmap.weixin_pressed);
                 msgtext1.setTextColor(getResources().getColor(R.color.msgcover));
                 if(checkInfo == null){
-                     checkInfo = new CheckInfo();
-                    transaction.add(R.id.content,checkInfo);
+                    messageFragment = new BlankFragment();
+                    transaction.add(R.id.content,messageFragment);
                 }
                 else transaction.show(checkInfo);
                 break;
@@ -197,7 +195,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         }
         transaction.commit();
     }
-
     public void cleanTabSelection(){
         msgbtn0.setImageResource(R.mipmap.weixin_normal);
         msgtext0.setTextColor(getResources().getColor(R.color.fontcolorBlack));
@@ -212,6 +209,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     private void hideFragments(FragmentTransaction transaction) {
         if (messageFragment != null) {
             transaction.hide(messageFragment);
+        }
+        if (syncFragment != null) {
+            transaction.hide(syncFragment);
         }
         if (checkInfo != null) {
             transaction.hide(checkInfo);

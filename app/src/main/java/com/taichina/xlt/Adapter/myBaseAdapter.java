@@ -30,21 +30,24 @@ public class myBaseAdapter extends BaseAdapter {
 
    public ViewHolder holder;
 
-    private ArrayList<HashMap<String,Object>> mData;
+    public ArrayList<HashMap<String,Object>> mData;
 
     private int mResource;
     private int mDropDownResource;
     private LayoutInflater mInflater;
     private Context mcontext;
+    public final boolean mi;
 
 
     private ArrayList<HashMap<String,Object>> mUnfilteredData;
-    public myBaseAdapter(Context context, ArrayList<HashMap<String,Object>> data, int resource, String[] from, int[] to){
+    public myBaseAdapter(Context context, ArrayList<HashMap<String,Object>> data, int resource, String[] from, int[] to,boolean i){
         mcontext = context;
         mData = data;
         mResource = resource;
         mFrom = from;
         mTo = to;
+        mi = i;
+
 
 
 
@@ -63,24 +66,23 @@ public class myBaseAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        holder = null;
+
         if(convertView == null){
             holder = new ViewHolder();
             convertView = LayoutInflater.from(mcontext).inflate(mResource,null);
-            holder.imageView1 = (ImageView) LayoutInflater.from(mcontext).inflate(mResource,null).findViewById(R.id.imageView1);
-            holder.TextView1 = (TextView) LayoutInflater.from(mcontext).inflate(mResource,null).findViewById(R.id.textView1);
-            holder.TextView2 = (TextView) LayoutInflater.from(mcontext).inflate(mResource,null).findViewById(R.id.textView2);
-            holder.TextView3 = (TextView) LayoutInflater.from(mcontext).inflate(mResource,null).findViewById(R.id.textView3);
-            holder.TextView4 = (TextView) LayoutInflater.from(mcontext).inflate(mResource,null).findViewById(R.id.textView4);
-            holder.TextView5 = (TextView) LayoutInflater.from(mcontext).inflate(mResource,null).findViewById(R.id.textView5);
-            //holder.EditText1 = (EditText) LayoutInflater.from(mcontext).inflate(mResource,null).findViewById(R.id.submit_text);
+            holder.imageView1 = (ImageView) convertView.findViewById(R.id.imageView1);
+            holder.TextView1 = (TextView)convertView.findViewById(R.id.textView1);
+            holder.TextView2 = (TextView) convertView.findViewById(R.id.textView2);
+            holder.TextView3 = (TextView)convertView.findViewById(R.id.textView3);
+            holder.TextView4 = (TextView) convertView.findViewById(R.id.textView4);
+            holder.TextView5 = (TextView) convertView.findViewById(R.id.textView5);
+            holder.EditText1 = (EditText) convertView.findViewById(R.id.submit_text);
 
             convertView.setTag(holder);
         }else {
             holder = (ViewHolder)convertView.getTag();
         }
 
-      //
 
             holder.imageView1.setBackgroundResource((Integer) (mData.get(position).get("drawable")));
             holder.TextView1 .setText((mData.get(position).get("tv1")).toString());
@@ -88,12 +90,10 @@ public class myBaseAdapter extends BaseAdapter {
             holder.TextView3 .setText((mData.get(position).get("tv3")).toString());
             holder.TextView4.setText((mData.get(position).get("tv4")).toString());
             holder.TextView5.setText((mData.get(position).get("tv5")).toString());
-            //holder.EditText1.setText("details");
-
-
-
-
-
+            if(mi){
+                holder.EditText1.setVisibility(View.VISIBLE);
+                holder.EditText1.setText(mData.get(position).get("et1").toString());
+            }
 
         return convertView;
 
@@ -103,14 +103,7 @@ public class myBaseAdapter extends BaseAdapter {
     public long getItemId(int position) {
         return 0;
     }
-    public ArrayList<String> edittextret(){
 
-        ArrayList<String> edittext1 =  new ArrayList<String>();
-        for(int i = 0;i< getCount();i++)
-        //edittext1.set(i, holder.EditText1.getText().toString());
-        edittext1.set(i, holder.TextView1.getText().toString());
-        return  edittext1;
-    };
 
     static  class ViewHolder{
         public TextView TextView1;

@@ -4,4 +4,8 @@
     <item android:id="@+id/add_menu" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="ifRoom|withText"
         android:icon="@mipmap/main_activtiy_add_pressed"/>
+    <item android:id="@+id/submit_menu" android:title="submit"
+        android:orderInCategory="100" app:showAsAction="ifRoom|withText"
+        android:icon="@mipmap/main_activtiy_add_pressed"/>
+
 </menu>

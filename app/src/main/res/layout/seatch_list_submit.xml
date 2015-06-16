@@ -13,6 +13,7 @@
     <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:background="@mipmap/megaphone"
         android:id="@+id/imageView1" />
     <LinearLayout
         android:orientation="vertical"
@@ -91,6 +92,7 @@
             android:id="@+id/submit_text"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:layout_weight="1"/>
 
 
