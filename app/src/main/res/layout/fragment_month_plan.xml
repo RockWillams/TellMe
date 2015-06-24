@@ -1,0 +1,228 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.taichina.xlt.fragment.MonthPlanFragment">
+    <LinearLayout
+        android:id="@+id/basic_info4"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/stripBackGround"
+
+        android:clickable="true">
+
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/weixin_pressed"
+            android:paddingLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:text="创建预想" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/add_button"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="@color/msgcover"
+                android:text="添加检查计划"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|center"
+                android:textColor="@color/fontcolorWhite"
+                android:gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="编号"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="计划单位"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="检查人"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="检查内容 "
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="0.5"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="检查时间"
+            android:textSize="12sp"
+            android:layout_weight="0.9"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="预计时间"
+            android:textSize="12sp"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="12sp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="应用安全科"
+        android:textSize="12sp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="胡伦穿"
+        android:textSize="12sp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="管理人员漏查单位机动车及驾驶员违法事实行为、漏登单位机动车道路交通事故，巡查人员发现危及运输安全的违法行为未采取制止措施或报告铁路公安、相关单位和部门，未定期对铁路沿线、车站（站场）防护栅栏、围墙等封闭设施进行检查、维护、维修"
+        android:layout_weight="0.5"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="2015.06.30 - 2015.07.01"
+        android:textSize="12sp"
+        android:layout_weight="0.9"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="2015.04.01"
+        android:textSize="12sp"
+        android:layout_weight="0.9"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="应用安全科"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="胡伦穿"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="管理人员漏查单位机动车及驾驶员违法事实行为、漏登单位机动车道路交通事故，巡查人员发现危及运输安全的违法行为未采取制止措施或报告铁路公安、相关单位和部门，未定期对铁路沿线、车站（站场）防护栅栏、围墙等封闭设施进行检查、维护、维修"
+            android:layout_weight="0.5"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="2015.06.30 - 2015.07.01"
+            android:textSize="12sp"
+            android:layout_weight="0.9"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="2015.04.01"
+            android:textSize="12sp"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="应用安全科"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="胡伦穿"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="管理人员漏查单位机动车及驾驶员违法事实行为、漏登单位机动车道路交通事故，巡查人员发现危及运输安全的违法行为未采取制止措施或报告铁路公安、相关单位和部门，未定期对铁路沿线、车站（站场）防护栅栏、围墙等封闭设施进行检查、维护、维修"
+            android:layout_weight="0.5"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="2015.06.30 - 2015.07.01"
+            android:textSize="12sp"
+            android:layout_weight="0.9"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="2015.04.01"
+            android:textSize="12sp"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

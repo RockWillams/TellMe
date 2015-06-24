@@ -21,15 +21,13 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.taichina.xlt.MainActivity;
 import com.taichina.xlt.R;
-import com.taichina.xlt.Utils.AddItemActivity;
+import com.taichina.xlt.activity.AddItemActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;

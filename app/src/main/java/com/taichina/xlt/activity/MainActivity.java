@@ -1,4 +1,4 @@
-package com.taichina.xlt;
+package com.taichina.xlt.activity;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -11,8 +11,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.taichina.xlt.R;
 import com.taichina.xlt.fragment.BlankFragment;
 import com.taichina.xlt.fragment.CheckInfoFragment;
+import com.taichina.xlt.fragment.MonthPlanFragment;
 import com.taichina.xlt.fragment.SyncFragment;
 
 
@@ -22,6 +24,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
      * 用于展示消息的Fragment
      */
     private BlankFragment messageFragment;
+    private MonthPlanFragment  checkFragment;
     private CheckInfoFragment checkInfo;
     private SyncFragment syncFragment;
 
@@ -64,19 +67,14 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         initview();
         fragmentManager = getFragmentManager();
-
-
         // 第一次启动时选中第0个tab
         setTabSelection(0);
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.check_menu, menu);
-
         return true;
     }
 
@@ -137,10 +135,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 break;
             default:
                 break;
-
         }
-
-
         return;
     }
 
@@ -165,11 +160,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             case 1:
                 msgbtn1.setImageResource(R.mipmap.weixin_pressed);
                 msgtext1.setTextColor(getResources().getColor(R.color.msgcover));
-                if(checkInfo == null){
-                    messageFragment = new BlankFragment();
-                    transaction.add(R.id.content,messageFragment);
+                if(checkFragment == null){
+                    checkFragment = new MonthPlanFragment();
+                    transaction.add(R.id.content,checkFragment);
                 }
-                else transaction.show(checkInfo);
+                else transaction.show(checkFragment);
                 break;
             case 2:
                 msgbtn2.setImageResource(R.mipmap.weixin_pressed);

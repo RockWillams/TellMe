@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/myTable"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+
+android:orientation="vertical">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/stripBackGround">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="司机"
+            android:textSize="20sp"
+            android:background="@color/table1"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/spinner1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textSize="20sp"
+            android:text="- - -"
+            android:background="@color/table1"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/line"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="车型："
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:background="@color/table2"
+            android:layout_weight="1"/>
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textSize="20sp"
+            android:background="@color/table2"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@color/line"/>
+<!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/stripBackGround">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="线路："
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:background="@color/table2"
+            android:layout_weight="1"/>
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textSize="20sp"
+            android:background="@color/table2"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/line"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="车次："
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:background="@color/table1"
+            android:layout_weight="1"/>
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textSize="20sp"
+            android:background="@color/table1"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@color/line"/>
+<!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/stripBackGround">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="起始站："
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:background="@color/table1"
+            android:layout_weight="1"/>
+        <Spinner
+            android:id="@+id/spinner5"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textSize="20sp"
+            android:background="@color/table1"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/line"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="终点站："
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:background="@color/table2"
+            android:layout_weight="1"/>
+        <Spinner
+            android:id="@+id/spinner6"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textSize="20sp"
+            android:background="@color/table2"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@color/line"/>
+<!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/stripBackGround">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="发点："
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:background="@color/table2"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/spinner7"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textSize="20sp"
+            android:background="@color/table2"
+            android:spinnerMode="dropdown"
+            android:text="- - -"
+            android:onClick="showTimerPickDialog"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/line"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="到点："
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:background="@color/table1"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/spinner8"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textSize="20sp"
+            android:text="- - -"
+            android:background="@color/table1"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@color/line"/>
+<!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/stripBackGround">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="检查日期："
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:background="@color/table1"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/spinner9"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textSize="20sp"
+            android:text="- - -"
+            android:background="@color/table1"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/line"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="     "
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:background="@color/table2"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/spinner10"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textSize="20sp"
+            android:background="@color/table2"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="sss"
+            android:textColor="@color/msgcover"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:background="@color/msgbackground"/>
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/msgbackground"
+            android:gravity="center"
+            android:text="sss"
+            android:textColor="@color/msgcover"/>
+
+    </LinearLayout>
+
+</LinearLayout>

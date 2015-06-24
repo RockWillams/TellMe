@@ -10,4 +10,10 @@
     <string name="str1">检查任务</string>
     <string name="title_activity_add_item">AddItemActivity</string>
     <string name="title_activity_edit_check">EditCheckActivity</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
 </resources>
