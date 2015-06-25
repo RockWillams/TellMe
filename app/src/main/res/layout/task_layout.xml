@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/stripBackGround"
+    android:orientation="vertical"
+    android:padding = "10dp">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/megaphone"
+        android:id="@+id/imageView1" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+         >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="----->"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView2"
+         />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/red"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium"
+            android:id="@+id/textView3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="HX007"
+            android:id="@+id/textView5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView4"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:text="1：在列车转弯时未及时鸣笛......"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/del_button"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/msgcover"
+                    android:text="删除"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right|center"
+                    android:textColor="@color/fontcolorWhite"
+                    android:gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/add_button"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/msgcover"
+                    android:text="上传"
+
+
+                    android:layout_gravity="right|center"
+                    android:textColor="@color/fontcolorWhite"
+                    android:gravity="center_horizontal"
+                    />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
