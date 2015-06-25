@@ -21,7 +21,7 @@ import com.taichina.xlt.fragment.SyncFragment;
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
 
     /**
-     * 用于展示消息的Fragment
+     * 锟斤拷锟斤拷展示锟斤拷息锟斤拷Fragment
      */
     private BlankFragment messageFragment;
     private MonthPlanFragment  checkFragment;
@@ -29,17 +29,17 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     private SyncFragment syncFragment;
 
     /**
-     * 用于展示联系人的Fragment
+     * 锟斤拷锟斤拷展示锟斤拷系锟剿碉拷Fragment
      */
     private BlankFragment contactsFragment;
 
     /**
-     * 用于展示动态的Fragment
+     * 锟斤拷锟斤拷展示锟斤拷态锟斤拷Fragment
      */
     private BlankFragment newsFragment;
 
     /**
-     * 用于展示设置的Fragment
+     * 锟斤拷锟斤拷展示锟斤拷锟矫碉拷Fragment
      */
     private BlankFragment settingFragment;
 
@@ -67,7 +67,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         initview();
         fragmentManager = getFragmentManager();
-        // 第一次启动时选中第0个tab
+        // 锟斤拷一锟斤拷锟斤拷锟斤拷时选锟叫碉拷0锟斤拷tab
         setTabSelection(0);
     }
 
@@ -215,8 +215,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         if (newsFragment != null) {
             transaction.hide(newsFragment);
         }
-        if (settingFragment != null) {
-            transaction.hide(settingFragment);
+        if (checkFragment != null) {
+            transaction.hide(checkFragment);
         }
     }
 

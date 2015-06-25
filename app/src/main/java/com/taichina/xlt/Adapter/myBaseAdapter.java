@@ -56,12 +56,12 @@ public class myBaseAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return mData.size();
+        return mData.size()-1;
     }
 
     @Override
     public Object getItem(int position) {
-        return mData.get(position);
+        return mData.get(position+1);
     }
 
     @Override
@@ -84,15 +84,16 @@ public class myBaseAdapter extends BaseAdapter {
         }
 
 
-            holder.imageView1.setBackgroundResource((Integer) (mData.get(position).get("drawable")));
-            holder.TextView1 .setText((mData.get(position).get("tv1")).toString());
-            holder.TextView2 .setText((mData.get(position).get("tv2")).toString());
-            holder.TextView3 .setText((mData.get(position).get("tv3")).toString());
-            holder.TextView4.setText((mData.get(position).get("tv4")).toString());
-            holder.TextView5.setText((mData.get(position).get("tv5")).toString());
+            holder.imageView1.setBackgroundResource((Integer) (mData.get(position+1).get("drawable")));
+
+            holder.TextView1 .setText((mData.get(position+1).get("tv1")).toString());
+            holder.TextView2 .setText((mData.get(position+1).get("tv2")).toString());
+            holder.TextView3 .setText((mData.get(position+1).get("tv3")).toString());
+            holder.TextView4.setText((mData.get(position+1).get("tv4")).toString());
+            holder.TextView5.setText((mData.get(position+1).get("tv5")).toString());
             if(mi){
                 holder.EditText1.setVisibility(View.VISIBLE);
-                holder.EditText1.setText(mData.get(position).get("et1").toString());
+                holder.EditText1.setText(mData.get(position+1).get("et1").toString());
             }
 
         return convertView;

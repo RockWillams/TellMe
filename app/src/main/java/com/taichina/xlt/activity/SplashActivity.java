@@ -12,8 +12,12 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 
 import com.taichina.xlt.R;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -32,6 +36,8 @@ public class SplashActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
 
         setContentView(R.layout.activity_splash);
         new Handler().postDelayed(new Runnable() {
@@ -58,7 +64,7 @@ public class SplashActivity extends Activity {
                     if(netInfo != null && netInfo.isAvailable()) {
 
 
-                        /////////////ÍøÂçÁ¬½Ó
+                        /////////////ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                         String name = netInfo.getTypeName();
 
                         if(netInfo.getType()==ConnectivityManager.TYPE_WIFI){
@@ -79,7 +85,7 @@ public class SplashActivity extends Activity {
 
             }
         };
-        //×¢²á¹ã²¥
+        //×¢ï¿½ï¿½ã²¥
         IntentFilter mFilter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
         registerReceiver(myNetReceiver, mFilter);
 
